@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beijing_hui">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/pager_hisPlay"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:canLoop="true">
+
+        </com.bigkoo.convenientbanner.ConvenientBanner>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <include layout="@layout/fragment_his_play_zhuifan"
+                android:id="@+id/zhuifan"
+                />
+            <include layout="@layout/fragment_his_play_fangsongbiao"
+                android:id="@+id/fangsong"
+                />
+            <include layout="@layout/fragment_his_play_suoyin"
+                android:id="@+id/suoyin"
+                />
+
+        </RelativeLayout>
+
+        <include layout="@layout/fragment_his_play_xinfan"
+            android:id="@+id/lianzai"/>
+
+        <projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView
+            android:id="@+id/xinfan_his_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:padding="15dp"
+            android:layout_marginBottom="@dimen/left_10dp"
+            android:gravity="center_horizontal"
+            >
+
+        </projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView>
+
+        <include layout="@layout/fragment_his_play_china"
+            android:id="@+id/china"/>
+        <projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView
+            android:id="@+id/china_his_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:padding="@dimen/left_10dp"
+            android:layout_marginBottom="@dimen/left_10dp"
+            android:gravity="center_horizontal">
+
+        </projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView>
+        <include layout="@layout/fragment_his_play_qiyue"
+            android:id="@+id/qiyue"/>
+        <projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView
+            android:id="@+id/qiyue_his_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:padding="@dimen/left_10dp"
+            android:layout_marginBottom="@dimen/left_10dp"
+            android:gravity="center_horizontal">
+
+        </projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView>
+        <include layout="@layout/fragment_his_play_choose"
+            android:id="@+id/choose"/>
+        <projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView
+            android:id="@+id/choose_his_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="1"
+            android:padding="@dimen/left_10dp"
+            android:layout_marginBottom="@dimen/left_10dp">
+
+        </projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView>
+    </LinearLayout>
+</ScrollView>

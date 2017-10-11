@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/logn_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_header"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/bili_default_avatar"
+            android:layout_marginTop="@dimen/left_20dp"
+            android:layout_marginLeft="@dimen/left_20dp"/>
+        <TextView
+            android:id="@+id/person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击头像登录"
+            android:layout_marginLeft="@dimen/left_20dp"
+            android:layout_marginTop="@dimen/left_10dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true">
+
+
+        <ImageView
+            android:id="@+id/ri_yue"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/yue"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/left_10dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/leimu_01"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/new_01"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

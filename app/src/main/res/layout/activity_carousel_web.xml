@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/beijing_huibai"
+    tools:context="projectedit.lanou.com.bilibili.OtherActivity.CarouselWebActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardCornerRadius="2dp"
+        app:cardBackgroundColor="@color/beijing_huibai"
+        app:cardElevation="6dp"
+       >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            >
+
+            <ImageView
+                android:id="@+id/web_back"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/zuojiantou"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/web_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="哔哩哔哩动画"
+                android:textColor="@color/white_01"
+                android:textSize="@dimen/text_18sp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/web_back"
+                android:layout_marginLeft="@dimen/left_10dp"/>
+
+            <ImageView
+                android:id="@+id/web_menu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/sandian"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/left_10dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </WebView>
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="4px"
+            android:layout_marginTop="3dp"
+            android:progressDrawable="@drawable/progress_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:id="@+id/myProgressBar"
+            />
+
+        <TextView
+            android:id="@+id/main"
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

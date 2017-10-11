@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SlidingMenuView">
+        <!--自定义一个属性值   可以在布局文件中设置对应的数值-->
+        <attr name="myRightPadding" format="dimension"/>
+
+    </declare-styleable>
+
+
+</resources>

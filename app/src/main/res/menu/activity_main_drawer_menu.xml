@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+
+    <group
+        android:id="@+id/nav"
+        android:checkableBehavior="single"
+        android:title="Home items"
+        android:icon="@mipmap/newss">
+        <item
+            android:id="@+id/home"
+            android:title="首页"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:checked="true"
+             />
+        <item
+            android:id="@+id/my_vip"
+            android:title="我的大会员"
+            android:icon="@drawable/ic_nav_vip"
+             />
+
+        <item
+            android:id="@+id/load"
+            android:title="离线缓存"
+            android:icon="@drawable/ic_file_download_black_24dp"
+             />
+
+    </group>
+    <group
+    android:id="@+id/nav11"
+    android:checkableBehavior="single"
+    android:title="Home items"
+    android:icon="@mipmap/newss">
+            <item
+                android:id="@+id/my_like"
+                android:title="我的收藏"
+                android:icon="@drawable/ic_star_black_24dp"
+                />
+            <item
+                android:id="@+id/old_look"
+                android:title="历史记录"
+                android:icon="@drawable/ic_history_black_24dp"/>
+            <item
+                android:id="@+id/person_like"
+                android:title="关注的人"
+                android:icon="@drawable/ic_people_black_24dp"/>
+            <item
+                android:id="@+id/money_box"
+                android:title="我的钱包"
+                android:icon="@drawable/ic_account_balance_wallet_black_24dp"/>
+
+      </group>
+    <group
+        android:id="@+id/nav1"
+        android:checkableBehavior="single"
+        android:title="Home items"
+        android:icon="@mipmap/newss"
+
+        >
+        <item
+            android:id="@+id/window"
+            android:title="主题选择"
+            android:icon="@drawable/ic_color_lens_black_24dp"
+            />
+        <item
+            android:id="@+id/apps"
+            android:title="应用推荐"
+            android:icon="@drawable/ic_shop_black_24dp"
+             />
+
+        <item
+            android:id="@+id/helper"
+            android:title="设置与帮助"
+            android:icon="@drawable/ic_settings_black_24dp"
+            />
+
+        <item
+            android:id="@+id/helper1"
+            android:title=""
+            android:checked="false"
+            />
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/beijing_hui"
+    tools:context="projectedit.lanou.com.bilibili.OtherActivity.LiveSortItemActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardBackgroundColor="@color/beijing_huibai"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/sort_back"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/zuojiantou" />
+
+            <TextView
+                android:id="@+id/sort_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/left_10dp"
+                android:layout_toRightOf="@+id/sort_back"
+                android:text="全部分类"
+                android:textColor="@color/white_01"
+                android:textSize="@dimen/text_18sp" />
+
+            <ImageView
+                android:id="@+id/sort_menu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/left_10dp"
+                android:src="@mipmap/sandian" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="@dimen/left_8dp">
+
+        </android.support.v7.widget.RecyclerView>
+        <ImageView
+            android:id="@+id/caidan_item"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/xia"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <GridView
+            android:id="@+id/sort_item_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/beijing_hui"
+            android:numColumns="2"
+            android:padding="@dimen/left_8dp">
+
+        </GridView>
+
+        <ImageView
+            android:id="@+id/error_bg"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/errbg"/>
+    </FrameLayout>
+
+</LinearLayout>

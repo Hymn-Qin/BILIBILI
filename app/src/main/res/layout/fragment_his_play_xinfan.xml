@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/recycler_bg_03"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/left_10dp"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:id="@+id/icon_title_choose"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/ic_category_t33"/>
+
+        <TextView
+            android:id="@+id/title_name_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新番连载"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14sp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/left_10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所有连载"
+            android:textColor="@color/hui"
+            android:textSize="@dimen/text_12sp"
+            />
+
+
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="14dp"
+            android:src="@mipmap/jian"/>
+    </LinearLayout>
+
+</RelativeLayout>

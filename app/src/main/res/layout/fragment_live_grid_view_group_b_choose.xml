@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/left_10dp"
+    android:layout_marginLeft="@dimen/left_10dp">
+
+
+        <Button
+            android:id="@+id/b_into_choose"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="查看更多"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_12sp"
+            android:gravity="center"
+            android:background="@drawable/recycler_bg_04"
+            android:layout_gravity="center_vertical"/>
+
+    <LinearLayout
+        android:id="@+id/b_change_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:background="@drawable/recycler_bg_03">
+
+        <TextView
+            android:id="@+id/b_num_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxxxx"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_10sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="条新动态 , 点击刷新!"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_10sp"
+            />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/shua"
+            android:layout_marginLeft="@dimen/left_10dp"
+           />
+    </LinearLayout>
+
+</RelativeLayout>

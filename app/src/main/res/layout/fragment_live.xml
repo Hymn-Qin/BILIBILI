@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_02">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_02">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/pager_live"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:canLoop="true">
+
+        </com.bigkoo.convenientbanner.ConvenientBanner>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="@color/beijing_huibai"
+            android:layout_marginBottom="@dimen/left_10dp">
+
+            <include layout="@layout/fragment_live_focus"
+                android:id="@+id/focus"/>
+            <include layout="@layout/fragment_live_center"
+                android:id="@+id/center"/>
+
+            <include layout="@layout/fragment_live_search"
+                android:id="@+id/search"/>
+            <include layout="@layout/fragment_live_sort"
+                android:id="@+id/sort"/>
+
+        </LinearLayout>
+
+
+        <!--推荐主播-->
+        <include layout="@layout/fragment_live_grid_view_group_choose"
+            android:id="@+id/choose_int"
+            />
+
+        <projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView
+            android:id="@+id/choose_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:padding="8dp">
+
+        </projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView>
+
+        <include layout="@layout/fragment_live_card_cha"
+            android:id="@+id/cha_live"
+
+            />
+
+        <projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView
+            android:id="@+id/choose_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:padding="@dimen/left_8dp"
+            android:layout_marginBottom="@dimen/left_10dp">
+
+        </projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView>
+
+        <include layout="@layout/fragment_live_grid_view_group_b_choose"
+            android:id="@+id/choose_load"/>
+
+
+        <!--绘画-->
+        <include layout="@layout/fragment_live_grid_view_group_paint"
+            android:id="@+id/paint_int"
+            />
+        <projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView
+            android:id="@+id/paint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:padding="@dimen/left_8dp"
+            android:layout_marginBottom="@dimen/left_10dp">
+
+        </projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView>
+
+        <include layout="@layout/fragment_live_grid_view_group_b_paint"
+            android:id="@+id/paint_load"/>
+
+
+        <!--手机直播-->
+        <include layout="@layout/fragment_live_grid_view_group_phone"
+            android:id="@+id/phone_int"
+            />
+        <projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:padding="@dimen/left_8dp"
+            android:layout_marginBottom="@dimen/left_10dp">
+
+        </projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView>
+
+        <include layout="@layout/fragment_live_grid_view_group_b_phone"
+            android:id="@+id/phone_load"/>
+
+
+        <!--music-->
+        <include layout="@layout/fragment_live_grid_view_group_music"
+            android:id="@+id/music_int"
+            />
+        <projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView
+            android:id="@+id/music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:padding="@dimen/left_8dp"
+            android:layout_marginBottom="@dimen/left_10dp">
+
+        </projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView>
+
+        <include layout="@layout/fragment_live_grid_view_group_b_music"
+            android:id="@+id/music_load"/>
+
+
+
+        <!--手游-->
+        <include layout="@layout/fragment_live_grid_view_group_phone_game"
+            android:id="@+id/game_phone_int"
+            />
+        <projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView
+            android:id="@+id/game_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:padding="@dimen/left_8dp"
+            android:layout_marginBottom="@dimen/left_10dp">
+
+        </projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView>
+
+        <include layout="@layout/fragment_live_grid_view_group_b_game_phone"
+            android:id="@+id/game_phone_load"/>
+
+
+        <!--单机-->
+        <include layout="@layout/fragment_live_grid_view_group_machine"
+            android:id="@+id/one_machine_int"
+            />
+        <projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView
+            android:id="@+id/one_machine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:padding="@dimen/left_8dp"
+            android:layout_marginBottom="@dimen/left_10dp">
+
+        </projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView>
+
+        <include layout="@layout/fragment_live_grid_view_group_b_machine"
+            android:id="@+id/one_machine_load"/>
+
+
+        <!--网络-->
+        <include layout="@layout/fragment_live_grid_view_group_game_ol"
+            android:id="@+id/game_ol_int"
+            />
+        <projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView
+            android:id="@+id/game_ol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:padding="@dimen/left_8dp"
+            android:layout_marginBottom="@dimen/left_10dp">
+
+        </projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView>
+
+        <include layout="@layout/fragment_live_grid_view_group_b_game_ol"
+            android:id="@+id/game_ol_load"/>
+
+
+
+        <!--电子竞技-->
+        <include layout="@layout/fragment_live_grid_view_group_e_sports"
+            android:id="@+id/e_sports_int"
+            />
+        <projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView
+            android:id="@+id/e_sports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:padding="@dimen/left_8dp"
+            android:layout_marginBottom="@dimen/left_10dp">
+
+        </projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView>
+
+        <include layout="@layout/fragment_live_grid_view_group_b_e_sports"
+            android:id="@+id/e_sports_load"/>
+
+
+        <!--御宅文化-->
+        <include layout="@layout/fragment_live_grid_view_group_culture"
+            android:id="@+id/culture_int"
+            />
+        <projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView
+            android:id="@+id/culture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:padding="@dimen/left_8dp"
+            android:layout_marginBottom="@dimen/left_10dp">
+
+        </projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView>
+
+        <include layout="@layout/fragment_live_grid_view_group_b_culture"
+            android:id="@+id/culture_load"/>
+
+
+        <!--放映厅-->
+        <include layout="@layout/fragment_live_grid_view_group_screening"
+            android:id="@+id/screening_int"
+            />
+        <projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView
+            android:id="@+id/screening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:padding="@dimen/left_8dp"
+            android:layout_marginBottom="@dimen/left_10dp">
+
+        </projectedit.lanou.com.bilibili.Utility.view.NoScrollGridView>
+
+        <include layout="@layout/fragment_live_grid_view_group_b_screening"
+            android:id="@+id/screening_load"/>
+
+        <TextView
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="更多直播"
+            android:textSize="@dimen/text_18sp"
+            android:textColor="@color/hui"
+            android:gravity="center"
+            android:background="@drawable/recycler_bg_04"
+            android:layout_marginLeft="@dimen/left_10dp"
+            android:layout_marginRight="@dimen/left_10dp"
+            android:layout_marginTop="@dimen/left_10dp"
+            android:layout_marginBottom="@dimen/left_10dp"/>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

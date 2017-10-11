@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    android:padding="10dp"
+    android:layout_weight="1"
+    android:background="@drawable/recycler_bg_01"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <ImageView
+        android:id="@+id/sort_machine_image"
+        android:layout_width="@dimen/sort_left"
+        android:layout_height="@dimen/sort_left"
+        />
+
+    <TextView
+        android:id="@+id/name_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="单机联机"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_14sp"
+        android:layout_marginTop="@dimen/left_8dp"/>
+
+</LinearLayout>

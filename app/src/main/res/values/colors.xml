@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fb7299</color>
+    <color name="colorPrimaryDark">#97445c</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="text_color">#fb749a</color>
+    <color name="recycler_bg">#ee899e</color>
+    <color name="white">#ffffff</color>
+    <color name="tOP_text_color">#fdc7d6</color>
+    <color name="black">#333333</color>
+    <color name="chegnse">#ffa500</color>
+    <color name="hong">#fd7072</color>
+    <color name="lan">#21c1fc</color>
+    <color name="beijing_huibai">#fafafa</color>
+    <color name="beijing_hui">#eaeaea</color>
+    <color name="beijng_hui_01">#d6d6d6</color>
+    <color name="hui">#999999</color>
+    <color name="white_01">#fafafa</color>
+    <color name="white_02">#eaeaea</color>
+    <color name="menu_black">#303030</color>
+    <color name="menu_onLine">#3c3c3c</color>
+    <color name="trans">#00000000</color>
+    <color name="qianlan">#e5e5e5</color>
+</resources>

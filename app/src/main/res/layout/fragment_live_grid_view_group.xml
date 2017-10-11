@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/left_20dp"
+        >
+        <ImageView
+            android:id="@+id/icon_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/big"/>
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="推荐主播"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14sp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/left_20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_12sp"
+            />
+        <TextView
+            android:id="@+id/live_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxxxx"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_12sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个直播"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_12sp"
+            />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="14dp"
+            android:src="@mipmap/jian"/>
+    </LinearLayout>
+
+</RelativeLayout>

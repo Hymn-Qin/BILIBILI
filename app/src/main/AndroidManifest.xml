@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="projectedit.lanou.com.bilibili">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/bilibili_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="Android:icon, android:theme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OtherActivity.CarouselWebActivity" />
+        <activity android:name=".OtherActivity.LiveSortActivity" />
+        <activity android:name=".OtherActivity.LiveSortItemActivity" />
+        <activity
+            android:name=".OtherActivity.LIvePlayItemActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensor" />
+        <activity android:name=".OtherActivity.ChannelActivity" />
+        <activity android:name=".OtherActivity.HisPlayUpItemActivity"></activity>
+    </application>
+
+</manifest>

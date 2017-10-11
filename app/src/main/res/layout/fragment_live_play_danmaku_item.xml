@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/cehgnjiuqu"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginLeft="@dimen/left_10dp"
+            app:cardCornerRadius="2dp"
+            app:cardBackgroundColor="#ba8ae7"
+            app:cardElevation="2dp"
+            app:cardPreventCornerOverlap="true"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/touxian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=" 特底 "
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_12sp"/>
+                <TextView
+                    android:id="@+id/dengji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:text=" 12 "
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:textColor="#ba8ae7"
+                    android:textSize="@dimen/text_12sp"/>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:id="@+id/chengjiu"
+            android:layout_width="60dp"
+            android:layout_height="16dp"
+            android:src="@drawable/chegnjiu_01"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="@dimen/left_10dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@+id/cehgnjiuqu"
+        android:layout_marginTop="4dp">
+
+
+        <TextView
+            android:id="@+id/name_dan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="李彬 :"
+            android:textColor="@color/hui"
+            android:textSize="@dimen/text_12sp"
+            android:layout_marginLeft="@dimen/left_10dp"/>
+        <TextView
+            android:id="@+id/danmaku_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我是女装癖"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_12sp"
+            android:layout_marginLeft="@dimen/left_10dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
